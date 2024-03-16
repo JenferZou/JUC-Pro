@@ -10,10 +10,12 @@ import java.util.concurrent.FutureTask;
 public class CreateFutureTask {
 
     public static void main(String[] args) throws ExecutionException, InterruptedException {
-        //创建任务对象
-        FutureTask<Integer> futureTask = new FutureTask<>(() -> {
-            log.info("futureTask is running");
-            return 1;
+        FutureTask<Integer> futureTask = new FutureTask<>(new Callable<Integer>() {
+            @Override
+            public Integer call() throws Exception {
+                log.info("futureTask is running");
+                return 1;
+            }
         });
 
         //创建线程,构造器方法上传入任务对象初始化线程
