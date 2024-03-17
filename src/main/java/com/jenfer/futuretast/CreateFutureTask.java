@@ -12,6 +12,7 @@ public class CreateFutureTask {
     public static void main(String[] args) throws ExecutionException, InterruptedException {
         FutureTask<Integer> futureTask = new FutureTask<>(new Callable<Integer>() {
             @Override
+
             public Integer call() throws Exception {
                 log.info("futureTask is running");
                 return 1;
