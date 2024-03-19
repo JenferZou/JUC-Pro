@@ -1,4 +1,4 @@
-package com.jenfer.runnable;
+package com.jenfer.runnabletest;
 
 import lombok.extern.slf4j.Slf4j;
 
