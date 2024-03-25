@@ -26,7 +26,6 @@ public class AsyConPro {
             }
         }, "consumer").start();
 
-
     }
 
 
